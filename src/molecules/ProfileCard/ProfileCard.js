@@ -10,7 +10,6 @@ const avatarBand = css`
     background-image: url('${headerImage}');
     background-size: contain;
     width: 100%;
-    box-sizing: border-box;
     height: 3.25rem;
     position: absolute;
     z-index: -1;
