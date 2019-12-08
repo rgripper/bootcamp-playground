@@ -1,5 +1,6 @@
 export const styleConstants = {
     paddings: {
+        xsmall: '0.25rem',
         small: '0.5rem', // between cards
         medium: '0.75rem', // card content padding
         large: '1.5rem', // metween rails
@@ -13,12 +14,12 @@ export const styleConstants = {
         lightGrayBlue: '#f3f6f8' // 'Write an article', article link, comment body
     },
     borderRadiuses: {
-        default: '2px',
+        default: '0.125rem',
     },
     boxShadows: {
         default: '0 0 0 1px rgba(0,0,0,.15),0 2px 3px rgba(0,0,0,.2)', // cards
     },
     fontSizes: {
-
+        t075: '0.75rem',
     }
 }

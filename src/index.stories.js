@@ -1,7 +1,7 @@
 import React from 'react';
-import { Button } from '@storybook/react/demo';
 import { addDecorator } from '@storybook/react';
 import { Global, css } from '@emotion/core';
+import { styleConstants } from "./atoms/style-constants";
 
 const global = css`
   body {
@@ -9,6 +9,10 @@ const global = css`
   }
   * {
     box-sizing: border-box;
+  }
+  a {
+    color: ${styleConstants.colors.teal};
+    text-decoration: none;
   }
 `;
 
