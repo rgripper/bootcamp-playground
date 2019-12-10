@@ -1,6 +1,5 @@
 import React from 'react';
 import ProfileCard from './ProfileCard';
-import { styleConstants } from "../../atoms/style-constants";
 export default { title: 'Profile Left Rail Card' };
 
 const sampleProfile = {
@@ -16,6 +15,6 @@ const sampleProfile = {
     }]
 };
 
-export const withText = () => <div style={{ display: 'inline-block', width: '216px' }}>
+export const withProfile = () => <div style={{ display: 'inline-block', width: '216px' }}>
     <ProfileCard {...sampleProfile}></ProfileCard>
 </div>;
