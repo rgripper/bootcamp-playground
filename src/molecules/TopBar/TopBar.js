@@ -1,8 +1,7 @@
 import React from 'react';
 import { styleConstants } from "../../atoms/style-constants";
-import { css, cx } from 'emotion';
-import Logo from './Logo.js';
-import SearchIcon from './SearchIcon.js';
+import { css } from 'emotion';
+import { Logo, SearchIcon } from './icons';
 
 const bar = css`
     position: fixed;
@@ -26,16 +25,17 @@ const searchInputContainer = css`
     height: 2.125rem;
     align-items: middle;
     border-radius: ${styleConstants.borderRadiuses.default};
-    
-    &, > input {
-        background-color: #e1e9ee; 
+    background-color: #e1e9ee; 
+
+    > * {
+        background-color: transparent; 
     }
 
     > button {
         border: 0;
         display: inline-block;
         padding: 0;
-        background: transparent;
+        
         margin: ${styleConstants.paddings.xsmall};
         > svg {
             transform: scale(0.7083);
@@ -47,7 +47,7 @@ const searchInputContainer = css`
     }
 `;
 
-const searchInputSpacer = css`
+const mainSpacer = css`
     flex: 1;
     margin-right: ${styleConstants.paddings.medium};
 `;
@@ -64,17 +64,22 @@ const logoLinkWrapper = css`
     }
 `;
 
-export default function ({ children }) {
-    return <header className={bar}>
-        <div className={barInner}>
-            <a href="#" className={logoLinkWrapper}><Logo /></a>
-            <div className={searchInputSpacer}>
-                <div className={searchInputContainer}>
-                    <button><SearchIcon /></button><input placeholder="Search" />
-                </div>
-            </div>
-
-            {children}
+function SearchInput() {
+    return (
+        <div className={searchInputContainer}>
+            <button><SearchIcon /></button><input placeholder="Search" />
         </div>
-    </header>
+    )
+}
+
+export default function TopBar ({ children }) {
+    return (
+        <header className={bar}>
+            <div className={barInner}>
+                <a href="#" className={logoLinkWrapper}><Logo /></a>
+                <div className={mainSpacer}><SearchInput /></div>
+                {children}
+            </div>
+        </header>
+    )
 }

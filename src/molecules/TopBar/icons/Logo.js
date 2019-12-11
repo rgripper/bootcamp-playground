@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function () {
+export default function Logo () {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet">
             <g className="scaling-icon">
