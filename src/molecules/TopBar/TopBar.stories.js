@@ -4,10 +4,11 @@ import ButtonItem from './ButtonItem';
 import { HomeIcon, MyNetworkIcon, JobsIcon, MessagingIcon, NotificationsIcon, PostJobIcon, WorkIcon } from './icons';
 import ItemSeparator from './ItemSeparator';
 import TopBar from './TopBar';
+import { unit } from '../../atoms/style-constants';
 
 export default { title: 'Top Bar' };
 
-export const withItemList = () => <div styles={{display: 'inline-block', width: '216px'}}>
+export const withItemList = () => <div styles={{display: 'inline-block', width: unit(13.5)}}>
     <TopBar>
         <LinkItem label="Home" isActive={true} Icon={HomeIcon} />
         <LinkItem label="My Network" isActive={false} Icon={MyNetworkIcon} />

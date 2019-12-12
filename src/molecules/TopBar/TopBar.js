@@ -1,5 +1,5 @@
 import React from 'react';
-import { styleConstants } from "../../atoms/style-constants";
+import { styleConstants, unit } from "../../atoms/style-constants";
 import { css } from 'emotion';
 import { Logo, SearchIcon } from './icons';
 
@@ -7,13 +7,13 @@ const bar = css`
     position: fixed;
     top: 0;
     width: 100vw;
-    height: 3.25rem;
+    height: ${unit(3.25)};
     background-color: ${styleConstants.colors.darkGreen};
 `;
 
 const barInner = css`
     height: 100%;
-    max-width: 1128px;
+    max-width: ${unit(70.5)};
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -22,7 +22,7 @@ const barInner = css`
 // TODO: move background-color
 const searchInputContainer = css`
     display: inline-flex;
-    height: 2.125rem;
+    height: ${unit(2.125)};
     align-items: middle;
     border-radius: ${styleConstants.borderRadiuses.default};
     background-color: #e1e9ee; 
@@ -55,8 +55,8 @@ const mainSpacer = css`
 const logoLinkWrapper = css`
     display: inline-block;
     margin-right: ${styleConstants.paddings.medium};
-    width: 2.125rem;
-    height: 2.125rem;
+    width: ${unit(2.125)};
+    height: ${unit(2.125)};
     overflow: hidden;
     > svg {
         transform: scale(0.7083);

@@ -1,8 +1,9 @@
 import React from 'react';
 import { css } from 'emotion';
+import { unit } from '../style-constants';
 
 const avatar = css`
-    width: 72px;
+    width: ${unit(4.5)};
     object-position: center;
     object-fit: cover;
     border: 2px solid #fff;

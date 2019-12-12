@@ -1,9 +1,11 @@
+export const unit = value => (value * 16) + 'px';
+
 export const styleConstants = {
     paddings: {
-        xsmall: '0.25rem',
-        small: '0.5rem', // between cards
-        medium: '0.75rem', // card content padding
-        large: '1.5rem', // metween rails
+        xsmall: unit(0.25),
+        small: unit(0.5), // between cards
+        medium: unit(0.75), // card content padding
+        large: unit(1.5), // metween rails
     },
     colors: {
         fireEngineRed: '#d11124',
@@ -18,12 +20,15 @@ export const styleConstants = {
         white: 'white'
     },
     borderRadiuses: {
-        default: '0.125rem',
+        default: unit(0.125),
     },
     boxShadows: {
         default: '0 0 0 1px rgba(0,0,0,.15),0 2px 3px rgba(0,0,0,.2)', // cards
     },
     fontSizes: {
-        t075: '0.75rem',
+        t075: unit(0.75),
+    },
+    fontWeights: {
+        bold: 600,
     }
 }

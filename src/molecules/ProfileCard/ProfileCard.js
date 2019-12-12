@@ -1,5 +1,5 @@
 import React from 'react';
-import { styleConstants } from "../../atoms/style-constants";
+import { styleConstants, unit } from "../../atoms/style-constants";
 import { css, cx } from 'emotion';
 import LeftRailCard from '../LeftRailCard/LeftRailCard';
 import ActorAvatar from '../../atoms/ActorAvatar/ActorAvatar';
@@ -18,7 +18,7 @@ const avatarBand = css`
 `;
 
 const avatarContainer = css`
-    height: 6.5rem;
+    height: ${unit(6.5)};
     position: relative;
     display: flex;
     justify-content: center; 
@@ -27,11 +27,11 @@ const avatarContainer = css`
 
 const nameContainer = css`
     text-align: center;
-    font-weight: 600;
+    font-weight: ${styleConstants.fontWeights.bold};
 `;
 
 const jobTitleContainer = css`
-    font-size: 0.75rem;
+    font-size: ${unit(0.75)};
     margin-top: ${styleConstants.paddings.xsmall};
     text-align: center;
     color: ${styleConstants.fontSizes.t075};
