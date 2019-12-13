@@ -1,5 +1,8 @@
 import React from 'react';
 import ProfileCard from './ProfileCard';
+import { text, object } from '@storybook/addon-knobs';
+import { styleConstants, unit } from "../../atoms/style-constants";
+
 export default { title: 'Profile Left Rail Card' };
 
 const sampleProfile = {
@@ -16,5 +19,7 @@ const sampleProfile = {
 };
 
 export const withProfile = () => <div style={{ display: 'inline-block', width: unit(13.5) }}>
-    <ProfileCard {...sampleProfile}></ProfileCard>
+    <ProfileCard fullName={text('Full Name', sampleProfile.fullName)}
+        fullName={text('Job Title', sampleProfile.jobTitle)}
+        viewStats={object('View Stats', sampleProfile.viewStats)}></ProfileCard>
 </div>;
