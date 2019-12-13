@@ -1,9 +1,8 @@
 import React from 'react';
-import { styleConstants } from "../../atoms/style-constants";
+import { styleConstants } from "../../style-constants";
 import { css, cx } from 'emotion';
 
 const container = css`
-    position: relative;
     box-shadow: ${styleConstants.boxShadows.default};
     border-radius: ${styleConstants.borderRadiuses.default};
 `;

@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
 import { addDecorator } from '@storybook/react';
-import { Global, css } from '@emotion/core';
 import { injectGlobal } from 'emotion';
-import { styleConstants } from "./atoms/style-constants";
+import { styleConstants } from "./style-constants";
 
 const GlobalStylesDecorator = storyFn => {
   useEffect(() => {
@@ -14,7 +13,6 @@ const GlobalStylesDecorator = storyFn => {
         box-sizing: border-box;
       }
       a {
-        color: ${styleConstants.colors.teal};
         text-decoration: none;
       }
     `;
