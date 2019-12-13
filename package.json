@@ -12,6 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.7.4",
+    "@storybook/addon-knobs": "^5.2.8",
     "@storybook/addon-viewport": "^5.2.6",
     "@storybook/react": "^5.2.6",
     "@storybook/storybook-deployer": "^2.8.1",
