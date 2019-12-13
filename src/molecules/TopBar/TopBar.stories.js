@@ -1,7 +1,7 @@
 import React from 'react';
 import LinkItem from './LinkItem';
 import ButtonItem from './ButtonItem';
-import { HomeIcon, MyNetworkIcon, JobsIcon, MessagingIcon, NotificationsIcon, PostJobIcon, WorkIcon } from './icons';
+import { HomeIcon, MyNetworkIcon, JobsIcon, MessagingIcon, NotificationsIcon, PostJobIcon, WorkIcon } from '../../atoms/icons';
 import ItemSeparator from './ItemSeparator';
 import TopBar from './TopBar';
 import { unit } from '../../atoms/style-constants';

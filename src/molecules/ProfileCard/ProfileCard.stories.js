@@ -15,6 +15,6 @@ const sampleProfile = {
     }]
 };
 
-export const withProfile = () => <div style={{ display: 'inline-block', width: '216px' }}>
+export const withProfile = () => <div style={{ display: 'inline-block', width: unit(13.5) }}>
     <ProfileCard {...sampleProfile}></ProfileCard>
 </div>;

@@ -34,12 +34,13 @@ const iconContainer = css`
 
 const badge = css`
     border-radius: 50%;
+    line-height: 1.1;
     border: 1px solid ${styleConstants.colors.darkGreen};
     font-size: ${styleConstants.fontSizes.t075};
     width: ${unit(1)};
     height: ${unit(1)};
     display: inline-flex;
-    align-items: center; 
+    align-items: baseline; 
     justify-content: center;
     color: ${styleConstants.colors.white};
     position: absolute;

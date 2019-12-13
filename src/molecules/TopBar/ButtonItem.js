@@ -1,7 +1,7 @@
 import React from 'react';
 import { css, cx } from 'emotion';
 import { styleConstants } from "../../atoms/style-constants";
-import { TriangleDownIcon } from './icons';
+import { TriangleDownIcon } from '../../atoms/icons';
 import { itemContainer } from './LinkItem';
 
 const container = css`

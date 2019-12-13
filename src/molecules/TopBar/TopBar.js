@@ -1,7 +1,7 @@
 import React from 'react';
 import { styleConstants, unit } from "../../atoms/style-constants";
 import { css } from 'emotion';
-import { Logo, SearchIcon } from './icons';
+import { Logo, SearchIcon } from '../../atoms/icons';
 
 const bar = css`
     position: fixed;
@@ -74,12 +74,14 @@ function SearchInput() {
 
 export default function TopBar ({ children }) {
     return (
-        <header className={bar}>
-            <div className={barInner}>
-                <a href="#" className={logoLinkWrapper}><Logo /></a>
-                <div className={mainSpacer}><SearchInput /></div>
-                {children}
-            </div>
-        </header>
+        <div style={{ marginBottom: unit(3.25) }}>
+            <header className={bar}>
+                <div className={barInner}>
+                    <a href="#" className={logoLinkWrapper}><Logo /></a>
+                    <div className={mainSpacer}><SearchInput /></div>
+                    {children}
+                </div>
+            </header>
+        </div>
     )
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { styleConstants, unit } from "../../atoms/style-constants";
 import { css, cx } from 'emotion';
-import LeftRailCard from '../LeftRailCard/LeftRailCard';
+import Card from '../Card/Card';
 import ActorAvatar from '../../atoms/ActorAvatar/ActorAvatar';
 import sealImage from '!file-loader!../../atoms/ActorAvatar/seal.jfif';
 import headerImage from '!file-loader!./header-bg.svg';
@@ -68,7 +68,7 @@ function ViewStat({ description, value }) {
 }
 
 export default function ({ fullName, jobTitle, viewStats }) {
-    return <LeftRailCard className={profileCard}>
+    return <Card className={profileCard}>
         <section>
             <div className={avatarContainer}>
                 <div className={avatarBand}></div>
@@ -84,5 +84,5 @@ export default function ({ fullName, jobTitle, viewStats }) {
         <section className={viewStats}>
             {viewStats.map(x => <ViewStat {...x}/>)}
         </section>
-    </LeftRailCard>
+    </Card>
 }
